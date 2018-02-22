@@ -17,6 +17,11 @@ $string = "I love PHP!";
 $result = Utility::contains($string, 'PHP');
 returns: 1
 
+Contains
+$string = "I love cats!";
+$result = Utility::contains($string, 'PHP');
+returns:
+
 Get filename with extension
 $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getFilenameWithExt ( $filepath );
