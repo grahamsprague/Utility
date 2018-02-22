@@ -12,7 +12,8 @@ This was created and tested using Php 5.6 but it is pretty simple and I assume i
 
 ##Examples
 
-```Contains
+```
+Contains
 $string = "I love PHP!";
 $result = Utility::contains($string, 'PHP');
 returns: 1
@@ -35,7 +36,8 @@ returns: myfile
 Get directory name
 $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getDirName ( $filepath );
-returns: /somedir/somedir```
+returns: /somedir/somedir
+```
 
 
 
