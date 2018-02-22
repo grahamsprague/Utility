@@ -15,19 +15,19 @@ This was created and tested using Php 5.6 but it is pretty simple and I assume i
 ```Contains
 $string = "I love PHP!";
 $result = Utility::contains($string, 'PHP');
-returns: 1```
+returns: 1
 
-```Get filename with extension
+Get filename with extension
 $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getFilenameWithExt ( $filepath );
-returns: myfile.txt```
+returns: myfile.txt
 
-```Get filename with out extension
+Get filename with out extension
 $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getFilenameNoExt ( $filepath );
-returns: myfile```
+returns: myfile
 
-```Get directory name
+Get directory name
 $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getDirName ( $filepath );
 returns: /somedir/somedir```
