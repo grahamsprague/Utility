@@ -15,7 +15,7 @@ class Utility
 	public $filepath;
 	
 	public static function contains ( $string, $search ){
-		if ( substr($string, $search) !== false  ){
+		if ( stristr($string, $search) !== false  ){
 			return true;
 		}else{
 			return false;

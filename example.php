@@ -9,6 +9,15 @@ echo '$string = "I love PHP!";<br />';
 echo '$result = Utility::contains($string, \'PHP\');';
 echo '</pre>';
 echo 'returns: '.$result;
+
+$string = "I love cats!";	
+$result = Utility::contains($string, 'PHP');
+echo '<pre>Contains<br>';
+echo '$string = "I love cats!";<br />';
+echo '$result = Utility::contains($string, \'PHP\');';
+echo '</pre>';
+echo 'returns: '.$result;
+
 	
 $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getFilenameWithExt ( $mypath );
