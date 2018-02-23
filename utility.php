@@ -55,7 +55,7 @@ class Utility
 
 		$explodedPath = explode('/', $filepath );
 
-		$result = $explodedPath[count($explodedPath) - 1];
+		$result = $explodedPath[count($explodedPath) - 2];
 
 
 
