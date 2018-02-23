@@ -38,6 +38,11 @@ $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getDirName ( $filepath );
 returns: /somedir/somedir
 
+Get directory path
+$mypath = '/somedir/somedir/somedir/myfile.txt';
+$result = Utility::getDirPath ( $filepath );
+returns: /somedir/somedir
+
 Predump
 $myarray = array(
 	1 => "toast",
@@ -45,9 +50,12 @@ $myarray = array(
 	3 => "potatoes",
 	4 => "bacon",
 	5 => "juice"
-);predump("breakfast:", $myarray);
+);
+
+predump("breakfast:", $myarray);
+
 returns:
-/somedir/somedir
+
 breakfast:
 
 array(5) {
