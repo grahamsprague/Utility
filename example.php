@@ -69,7 +69,7 @@ echo '$myarray = array(
 	3 => "potatoes",
 	4 => "bacon",
 	5 => "juice"
-);';
+);<br />';
 echo 'predump("breakfast:", $myarray);</pre>';
 echo 'returns: <br />'.$result;
 Utility::predump("breakfast:", $myarray);
