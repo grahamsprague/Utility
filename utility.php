@@ -52,6 +52,20 @@ class Utility
 
 	public static function getDirName ( $filepath ){
 
+
+		$explodedPath = explode('/', $filepath );
+
+		$result = $explodedPath[count($explodedPath) - 1];
+
+
+
+		return $result;
+
+	}
+
+	public static function getDirPath ( $filepath ){
+
+
 		$explodedPath = explode('/', $filepath );
 
 		$result = implode('/', array_slice($explodedPath, 0, count($explodedPath) - 2) );
@@ -65,7 +79,7 @@ class Utility
 	public static function predump ($label, $item){
 		echo "<p>$label</p>";
 		echo '<pre>';
-		vardump ($item);
+		var_dump ($item);
 		echo '</pre>';
 	}
 
