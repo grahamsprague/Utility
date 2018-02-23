@@ -1,8 +1,8 @@
 <?php
-	
+
 include ('utility.php');
-	
-$string = "I love PHP!";	
+
+$string = "I love PHP!";
 $result = Utility::contains($string, 'PHP');
 echo '<pre>Contains<br>';
 echo '$string = "I love PHP!";<br />';
@@ -10,7 +10,7 @@ echo '$result = Utility::contains($string, \'PHP\');';
 echo '</pre>';
 echo 'returns: '.$result;
 
-$string = "I love cats!";	
+$string = "I love cats!";
 $result = Utility::contains($string, 'PHP');
 echo '<pre>Contains<br>';
 echo '$string = "I love cats!";<br />';
@@ -18,15 +18,15 @@ echo '$result = Utility::contains($string, \'PHP\');';
 echo '</pre>';
 echo 'returns: '.$result;
 
-	
+
 $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getFilenameWithExt ( $mypath );
 echo '<pre>Get filename with extension<br>';
 echo '$mypath = \'/somedir/somedir/somedir/myfile.txt\';<br />';
 echo '$result = Utility::getFilenameWithExt ( $filepath );';
 echo '</pre>';
-echo 'returns: '.$result;	
-	
+echo 'returns: '.$result;
+
 
 $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getFilenameNoExt ( $mypath );
@@ -53,6 +53,25 @@ echo '$result = Utility::getDirPath ( $filepath );';
 echo '</pre>';
 echo 'returns: '.$result;
 
+
+$myarray = array(
+	1 => "toast",
+	2 => "eggs",
+	3 => "potatoes",
+	4 => "bacon",
+	5 => "juice"
+);
+$result = Utility::predump("breakfast:", $myarray);
+echo '<pre>Predump<br>';
+echo '$myarray = array(
+	1 => "toast",
+	2 => "eggs",
+	3 => "potatoes",
+	4 => "bacon",
+	5 => "juice"
+);';
+echo 'predump("breakfast:", $myarray);</pre>';
+echo 'returns: <br />'.$result;
 
 
 ?>
