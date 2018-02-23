@@ -36,7 +36,7 @@ returns: myfile
 Get directory name
 $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getDirName ( $filepath );
-returns: /somedir
+returns: somedir
 
 Get directory path
 $mypath = '/somedir/somedir/somedir/myfile.txt';
