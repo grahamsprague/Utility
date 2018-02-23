@@ -61,7 +61,7 @@ $myarray = array(
 	4 => "bacon",
 	5 => "juice"
 );
-$result = Utility::predump("breakfast:", $myarray);
+
 echo '<pre>Predump<br>';
 echo '$myarray = array(
 	1 => "toast",
@@ -72,6 +72,6 @@ echo '$myarray = array(
 );';
 echo 'predump("breakfast:", $myarray);</pre>';
 echo 'returns: <br />'.$result;
-
+Utility::predump("breakfast:", $myarray);
 
 ?>

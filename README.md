@@ -37,6 +37,33 @@ Get directory name
 $mypath = '/somedir/somedir/somedir/myfile.txt';
 $result = Utility::getDirName ( $filepath );
 returns: /somedir/somedir
+
+Predump
+$myarray = array(
+	1 => "toast",
+	2 => "eggs",
+	3 => "potatoes",
+	4 => "bacon",
+	5 => "juice"
+);predump("breakfast:", $myarray);
+returns:
+/somedir/somedir
+breakfast:
+
+array(5) {
+  [1]=>
+  string(5) "toast"
+  [2]=>
+  string(4) "eggs"
+  [3]=>
+  string(8) "potatoes"
+  [4]=>
+  string(5) "bacon"
+  [5]=>
+  string(5) "juice"
+}
+
+
 ```
 
 
